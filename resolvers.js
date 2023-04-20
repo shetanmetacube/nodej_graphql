@@ -22,6 +22,11 @@ const resolvers = {
                     id:11,
                     name: "Thomas Edison",
                     email: "thomas@gmail.com"
+                } ,
+                {
+                    id:12,
+                    name: "Larry Phase",
+                    email: "larray@gmail.com"
                 } 
             ]
         },
