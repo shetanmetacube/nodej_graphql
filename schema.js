@@ -16,7 +16,7 @@ const typeDefs = `#graphql
 
     type Query {
         user(id: Int): User
-        allUsers:  [User]
+        allUsers(limit: Int):  [User]
         allReceipe: [Receipe]
         receipe(id: Int): Receipe
     }

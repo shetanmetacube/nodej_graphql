@@ -2,20 +2,26 @@
 const resolvers = {
     Query: {
         async user(root, {id}){
-        
+            if(id==10)
+                return {
+                    id:10,
+                    name: "Albert Eiensten",
+                    email: "albert@gmail.com",
+                    
+            }
         },
-        async allUsers(root){
+        async allUsers(root, {limit}){
             return [
                 {
                     id:10,
-                    name: "Rakesh Jangid",
-                    email: "rakesh@gmail.com",
+                    name: "Albert Eiensten",
+                    email: "albert@gmail.com",
                     menu:[]
                 },
                 {
                     id:11,
-                    name: "Devkinandan Sharma",
-                    email: "devki@gmail.com"
+                    name: "Thomas Edison",
+                    email: "thomas@gmail.com"
                 } 
             ]
         },
